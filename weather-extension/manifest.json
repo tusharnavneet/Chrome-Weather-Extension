@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Weather Extension",
+  "version": "1.0",
+  "description": "Get current weather based on your location",
+  "permissions": [
+    "geolocation",
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://api.weatherapi.com/*",
+    "http://api.weatherapi.com/*",
+    "https://ipapi.co/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Weather Extension",
+    "default_icon": {
+      "16": "icons/icon.png",
+      "32": "icons/icon.png",
+      "48": "icons/icon.png",
+      "128": "icons/icon.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon.png",
+    "32": "icons/icon.png",
+    "48": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://api.weatherapi.com http://api.weatherapi.com https://ipapi.co;"
+  }
+}

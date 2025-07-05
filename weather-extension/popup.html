@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Extension</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌤️ Weather Check</h1>
+        
+        <button id="getWeatherBtn" class="weather-btn">
+            Get Current Weather
+        </button>
+        
+        <div id="manualLocationDiv" class="manual-location hidden">
+            <p>Or enter your city manually:</p>
+            <input type="text" id="cityInput" placeholder="Enter city name..." />
+            <button id="searchCityBtn" class="search-btn">Search</button>
+        </div>
+        
+        <div id="loadingSpinner" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Getting weather data...</p>
+        </div>
+        
+        <div id="weatherResult" class="weather-result hidden">
+            <div class="weather-info">
+                <h2 id="cityName"></h2>
+                <div class="temperature">
+                    <span id="temp"></span>
+                    <button id="unitToggle" class="unit-toggle">°F</button>
+                </div>
+                <p id="condition"></p>
+                <div id="weatherIcon"></div>
+            </div>
+        </div>
+        
+        <div id="errorMessage" class="error hidden">
+            <p id="errorText"></p>
+            <button id="retryBtn" class="retry-btn">Try Again</button>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!-- This is a placeholder for the icon. You can replace this with an actual PNG image -->
+<!-- For now, I'll create an SVG that you can convert to PNG -->
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky background -->
+  <circle cx="64" cy="64" r="64" fill="#74b9ff"/>
+  
+  <!-- Sun -->
+  <circle cx="45" cy="45" r="15" fill="#ffeaa7"/>
+  
+  <!-- Sun rays -->
+  <path d="M45 20 L45 25 M66 45 L61 45 M58 27 L55 30 M33 27 L36 30 M24 45 L29 45 M33 63 L36 60 M58 63 L55 60" 
+        stroke="#ffeaa7" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Cloud -->
+  <path d="M35 70 Q25 70 25 80 Q25 90 35 90 L85 90 Q95 90 95 80 Q95 70 85 70 Q80 65 75 65 Q70 60 60 60 Q50 60 45 65 Q40 70 35 70 Z" 
+        fill="white" opacity="0.9"/>
+  
+  <!-- Smaller cloud -->
+  <path d="M70 55 Q65 55 65 60 Q65 65 70 65 L90 65 Q95 65 95 60 Q95 55 90 55 Q88 52 85 52 Q82 50 78 50 Q74 50 72 52 Q70 55 70 55 Z" 
+        fill="white" opacity="0.7"/>
+</svg>
